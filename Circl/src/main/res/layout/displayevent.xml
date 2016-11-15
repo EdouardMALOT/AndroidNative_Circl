@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    >
+
+
+<!--
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondevent"
+        android:foregroundGravity="top"
+        />
+-->
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        >
+
+        <!-- Back button -->
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+
+                android:text="X   "
+
+                android:id="@+id/back_from_event"
+                android:textStyle="bold"
+
+                android:layout_gravity="right"
+                android:gravity="right|center_vertical"
+
+                android:background="#dddddd"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                />
+
+
+        <!-- First line -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/localisation"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+
+                    android:textStyle="bold"
+                    android:text="Titre"
+                    android:id="@+id/TitreEvent"
+                    android:layout_weight="1.00"
+                    android:layout_gravity="right|center_vertical"
+
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    />
+
+
+                <!-- Bp share -->
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/share"
+
+                    android:id="@+id/share_btn"
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="13dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        <!-- Second line -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:orientation="horizontal"
+                >
+
+                <!-- Horraire -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/petitehorloge"
+                        android:paddingLeft="13dp"
+                        android:paddingRight="2dp"
+                        />
+
+                    <TextView
+                        android:layout_width="50sp"
+                        android:layout_height="fill_parent"
+                        android:text="10h - 22h"
+                        android:id="@+id/horraires"
+                        android:textColor="#ff0153"
+                        android:textSize="9sp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                <!-- Prix -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/euros"
+                        android:id="@+id/logoprix"
+                        android:paddingLeft="13dp"
+                        android:paddingRight="2dp"
+                        />
+
+                    <TextView
+                        android:layout_width="80sp"
+                        android:layout_height="fill_parent"
+                        android:text="Gratuit"
+                        android:id="@+id/prix"
+                        android:textColor="#ff0153"
+                        android:textSize="9sp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                <!-- Paratger par -->
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Proposé par : Edouard"
+                        android:id="@+id/Author"
+                        android:textColor="#cbcbcb"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        />
+
+            </LinearLayout>
+
+
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/DescriptionEvent"
+            android:layout_weight="0.35"
+            android:gravity="center_vertical"
+
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+
+            android:minHeight="120dp"
+
+            />
+
+        <!-- Image de l'event -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/image_event"
+            android:layout_weight="0.45"
+            android:src="@drawable/imgchargement"
+            />
+
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/iconlogo"
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:minHeight="70dp"
+            />
+
+<!--        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/logo"
+            android:id="@+id/share_btn"
+            android:layout_gravity="center_horizontal|bottom"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:minHeight="70dp"
+            />
+-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

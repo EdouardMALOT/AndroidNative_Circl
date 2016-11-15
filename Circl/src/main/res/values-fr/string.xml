@@ -1,0 +1,24 @@
+
+<resources>
+    <string name="app_name">Circl</string>
+    <string name="title_activity_maps">@string/app_name</string>
+
+    <string name="WelcomMsg"> Circl ! Vivez le meilleur</string>
+    <string name="title_event">Evènement</string>
+    <string name="LoadingText">Chargement, veuillez patienter…</string>
+
+    <string name="FailConnexionMsg">Erreur de connexion à internet</string>
+
+    <string name="AdrAddMark">http://www.place2b.ovh/AppAddMarqueurs.php</string>
+    <string name="AutomaticMarkMsg">Auto Circl ! </string>
+
+    <string name="MorningToastMsg">A faire ce matin</string>
+    <string name="NoonToastMsg">A faire cet après-midi</string>
+    <string name="NightToastMsg">A faire ce soir</string>
+
+    <string name="ShareMsg">Creation du partage en cours</string>
+
+    <string name="ErrorDescriptionShare">Désole, votre description est trop courte !</string>
+
+</resources>
+

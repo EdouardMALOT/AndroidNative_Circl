@@ -1,0 +1,86 @@
+<RelativeLayout
+
+    xmlns:App="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/DisplayedMap"
+    tools:context="io.circl.circl.MapsActivity"
+    >
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        tools:context="io.circl.circl.MapsActivity"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button_morning"
+        android:background="@drawable/reveilvide"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button_moon"
+        android:background="@drawable/soleilvide"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_morning"
+        />
+
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button_night"
+        android:background="@drawable/lunevide"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_moon"
+        />
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="@dimen/fab_margin"
+            App:fabSize="mini"
+            android:src="@drawable/ic_action_add_event"
+            android:id="@+id/AddEventBtn"
+            />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
